@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tobie Milford National Parks App</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <h1>Tobie's National Park Finder</h1>
+    <h2>Find parks in each state.</h2>
+    <form class="request_parks">
+        <label for="state_name">Which state(s)?</label>
+            <input type="text" placeholder="AZ, TN, etc." class="state_name" name="state_name" required>
+        <label for="park_count">Max results?</label>
+            <input type="number" placeholder="10" class="park_count" name="park_count" required>
+        <button>Submit</button>
+    </form>
+    <div class="list_container">
+        <h3 class="results hidden">Search Results:</h3>
+        <div class="park_list"></div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+    <script src='script.js'></script>
+</body>
+</html>
